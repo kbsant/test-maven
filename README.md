@@ -7,3 +7,6 @@ Generate structure using maven:
 Build an uberjar:
 
     mvn clean compile assembly:single
+
+Note: maven-assembly-plugin may break references to spring xsd references.
+To avoid broken references, use the maven shade plugin for uberjars.

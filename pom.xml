@@ -76,6 +76,8 @@
           <version>3.0.0</version>
         </plugin>
         <plugin>
+          <!-- Note: maven-assembly-plugin may break references to spring xsd references.
+               To avoid broken references, use the maven shade plugin for uberjars. -->
           <artifactId>maven-assembly-plugin</artifactId>
           <configuration>
             <archive>
